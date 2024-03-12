@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<style>
+    .carousel-container {
+        width: 100%; /* Adjust the width of the container as needed */
+    }
+
+    .carousel-item img {
+        /* Adjust the dimensions of the images */
+        width: 90%; /* Set width to 100% for responsiveness */
+        height: 750px; /* Maintain aspect ratio */
+        /* You can also set specific width and height values */
+        /* width: 500px; */
+        /* height: 300px; */
+        /* Or use other CSS units like percentages or viewport units */
+        /* width: 50%; */
+        /* height: 50vh; */
+    }
+
+    .card img{
+        height:250px;
+    }
+</style>
+
+
+<div class="container my-3 px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/21.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wide Range of Watches</h5>
+              <p>Suitable for Every Moment of your Life.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/25.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Great Build Quality</h5>
+              <p>Lifetime Warranty over all our Watches.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/13.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Branded Watch Range</h5>
+              <p>Our Watch collection contain premium brand from all over world.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container my-3">
+<h3 class="my-5">Choose the Watch according to your taste</h3>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/4.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">This is a section which contains customize watch collection for couples with a wide range.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/5.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">This is budget collection of watches with varied styles comprise of a number of budget brands like casio.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/6.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">This is a medium budget brand watch collection section where u can get a number of gifting watches.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/11.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">Smartwatch collection for fitness entusiasts with a number of band options.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/12.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">This is a range of super premium watches with few customization options as per your taste.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/28.jpg" class="d-block w-100" alt="...">
+          
+          <div class="card-body">
+            <p class="card-text">This is a wider collection of ultra rare watches in the world.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+{% endblock body %}
